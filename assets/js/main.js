@@ -5,7 +5,7 @@ window.fbAsyncInit = function() {
       xfbml      : true,
       version    : 'v2.8'
     });
-    FB.AppEvents.logPageView();   
+    FB.AppEvents.logPageView();
   };
 
   (function(d, s, id){
@@ -19,16 +19,6 @@ window.fbAsyncInit = function() {
 FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
 });
-
-{
-    status: 'connected',
-    authResponse: {
-        accessToken: '...',
-        expiresIn:'...',
-        signedRequest:'...',
-        userID:'...'
-    }
-}
 
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
